@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'poppins-medium';
-  src: url('/poppins-webfont/Poppins-Medium.tff') format('tff');
+  src: url('poppins-webfont/Poppins-Medium.tff') format('tff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'poppins-semibold';
-  src: url('/poppins-webfont/Poppins-SemiBold.tff') format('tff');
+  src: url('poppins-webfont/Poppins-SemiBold.tff') format('tff');
   font-weight: bolder;
   font-style: normal;
 }
@@ -50,10 +50,20 @@ body {
 
 .first-header {
   font-family: 'poppins-light', sans-serif;
+  font-weight: lighter;
 }
 
 .second-header {
   font-family: 'poppins-semibold', sans-serif;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2rem;
 }
 
 h3,
@@ -84,20 +94,20 @@ section img {
 
 .supervisor {
   border-top: 3px solid hsl(180, 62%, 55%);
-  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+  box-shadow: 0px 5px 5px hsl(229, 6%, 66%);
 }
 
 .team-builder {
   border-top: 3px solid hsl(0, 78%, 62%);
-  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+  box-shadow: 0px 5px 5px hsl(229, 6%, 66%);
 }
 
 .karma {
   border-top: 3px solid hsl(34, 97%, 64%);
-  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+  box-shadow: 0px 5px 5px hsl(229, 6%, 66%);
 }
 
 .calculator {
   border-top: 3px solid hsl(212, 86%, 64%);
-  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+  box-shadow: 0px 5px 5px hsl(229, 6%, 66%);
 }
