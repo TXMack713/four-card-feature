@@ -75,13 +75,18 @@ h6 {
 
 .introduction {
   color: hsl(229, 6%, 66%);
+  text-align: center;
 }
 
 section {
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 section > p {
+  /* justify-content: flex-start; */
   color: hsl(229, 6%, 66%);
 }
 
