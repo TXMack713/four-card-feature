@@ -1,6 +1,3 @@
-
-
-
 @font-face {
   font-family: 'poppins-light';
   src: url('/poppins-webfont/Poppins-Light.tff') format('tff');
@@ -66,14 +63,23 @@ h6 {
   font-family: 'poppins-medium', sans-serif;
 }
 
+.introduction {
+  color: hsl(229, 6%, 66%);
+}
+
 section {
   width: 100%;
+}
+
+section > p {
+  color: hsl(229, 6%, 66%);
 }
 
 section img {
   display: flex;
   align-self: flex-end;
   justify-self: flex-end;
+  color: hsl(229, 6%, 66%);
 }
 
 .supervisor {
