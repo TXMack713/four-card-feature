@@ -1,3 +1,97 @@
-@font-face {
 
+
+
+@font-face {
+  font-family: 'poppins-light';
+  src: url('/poppins-webfont/Poppins-Light.tff') format('tff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('/poppins-webfont/Poppins-Medium.tff') format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url('/poppins-webfont/Poppins-SemiBold.tff') format('tff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  word-break: keep-all;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  max-width: 375px;
+  padding: 0 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.first-header {
+  font-family: 'poppins-light', sans-serif;
+}
+
+.second-header {
+  font-family: 'poppins-semibold', sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'poppins-medium', sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+section img {
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+}
+
+.team-builder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+}
+
+.karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
+}
+
+.calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  box-shadow: 5px 5px 5px hsl(229, 6%, 66%);
 }
