@@ -57,6 +57,7 @@ body {
 .second-header {
   font-family: 'poppins-semibold', sans-serif;
   font-weight: bold;
+  color: hsl(234, 12%, 34%);
 }
 
 header {
