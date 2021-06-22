@@ -152,6 +152,12 @@ section img {
     flex-flow: column nowrap;
     align-items: flex-start;
   }
+  
+  section img {
+  display: flex;
+  align-self: flex-end;
+  color: hsl(229, 6%, 66%);
+}
 
   h1 {
     font-size: 1.8rem;
