@@ -110,6 +110,7 @@ section > p {
 section img {
   display: flex;
   align-self: flex-end;
+  justify-self: flex-end;
   color: hsl(229, 6%, 66%);
 }
 
@@ -147,17 +148,31 @@ section img {
   section {
     width: 100%;
     padding: 15px;
-    /* margin-bottom: 4vh; */
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-around;
     align-items: flex-start;
   }
-  
-  section img {
-  display: flex;
-  align-self: flex-end;
-  color: hsl(229, 6%, 66%);
-}
+
+  section {
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  section > h3 {
+    grid-row: 1;
+  }
+
+  section > p {
+    grid-row: 2;
+  }
+
+  section > img {
+    grid-row: 4;
+    color: hsl(229, 6%, 66%);
+  }
 
   h1 {
     font-size: 1.8rem;
