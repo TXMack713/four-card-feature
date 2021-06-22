@@ -136,7 +136,7 @@ section img {
 @media all and (min-width: 960px) {
   body {
     display: grid;
-    grid-template-rows: 5vh repeat(6, 15vh) 5vh;
+    grid-template-rows: 5vh repeat(6, 14vh) 5vh;
     grid-template-columns: repeat(11, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 10px;
