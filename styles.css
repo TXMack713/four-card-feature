@@ -93,7 +93,6 @@ h6 {
 }
 
 section {
-  /* min-width: 100%; */
   max-width: 375px;
   padding: 15px;
   margin-bottom: 1vh;
@@ -103,7 +102,6 @@ section {
 }
 
 section > p {
-  /* justify-content: flex-start; */
   color: hsl(229, 6%, 66%);
 }
 
