@@ -134,6 +134,7 @@ section > img {
   grid-row: 4;
   color: hsl(229, 6%, 66%);
   justify-self: end;
+  object-fit: contain;
 }
 
 .supervisor {
