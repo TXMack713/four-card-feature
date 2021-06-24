@@ -27,6 +27,7 @@ body {
   padding: 0;
   overflow: auto;
   word-break: keep-all;
+  -ms-word-break: keep-all;
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
