@@ -100,7 +100,7 @@ section > p {
 
 section {
   width: 100%;
-  padding: 0.5rem 25px 2rem;
+  padding: 0.5rem 25px 25px;
   display: grid;
   grid-template-rows: 20% 20% 32.5% 27.5%;
 }
@@ -161,7 +161,7 @@ section > img {
 
   section {
     width: 100%;
-    padding: 0.5rem 25px 2rem;
+    padding: 0.5rem 25px 25px;
     display: grid;
     grid-template-rows: 20% 20% 32.5% 27.5%;
     margin-bottom: 1rem;
