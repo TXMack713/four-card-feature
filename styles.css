@@ -76,7 +76,6 @@ body {
 header {
   text-align: center;
   justify-content: center;
-  /*grid-row: 1;*/
 }
 
 h1 {
@@ -95,6 +94,7 @@ h6 {
 .introduction {
   color: hsl(229, 6%, 66%);
   text-align: center;
+  margin: 0 auto;
   padding: 15px;
   max-width: 100%;
 }
