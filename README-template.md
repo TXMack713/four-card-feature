@@ -16,32 +16,23 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![file:///home/txmack713/Downloads/FireShot/FireShot%20Capture%20002%20-%20Frontend%20Mentor%20-%203-column%20preview%20card%20component%20-%20127.0.0.1.png]
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub/TXMack713](https://github.com/TXMack713/four-card-feature/)
+- Live Site URL: [GitHub Pages] (https://txmack713.github.io/four-card-feature/)
 
 ## My process
 
@@ -49,62 +40,50 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned that including the html element in your resets distorts how the page is rendered. I removed the html element from my page reset after some trial and error while struggling to get a nav bar to remain sticky while working on an MDN CSS exercise.
 
-To see how you can add code snippets, see below:
+I initially tried laying out the page using CSS Flexbox, but was unable to achieve the responsiveness and element positioning I was expecting. I chose to switch to CSS Grid and was able to place the container, divs and div items exactly where I wanted.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Also, by submitting my solution on frontendmentor.io, I was able to look and compare my solution to others and noticed that there were some design details that I missed and was able to revist and address.
+
+Having the static page hosted on GitHub pages allowed me to see how differently browsers rendered the same content. The Brave, Edge and Google browsers all rendered the page in mobile and desktop layouts as expected, but the Firefox browser extended the section elements fully to the top and bottom of the page. By removing the html element from my page reset and adding a 5% margin to the body element the page created the gap based on the CSS Grid inputs within the container element. However, the page still rendered the content fairly large compared to the other browsers.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+body {
+    margin: 5% auto;
+    height: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    grid-template-rows: 20% 60% 20%;
+    margin: 0 auto;
+    padding: 0;
+    block-size: 100%;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    max-inline-size: 1440px;
+  }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I've worked through Flexbox Zombies and am currently working through Grid Critters in an effort to perfect my layout skills. This lesson taught me that I still have a ways to go with in learning how to move knowing the syntax to being able to expertly position items on the page as expected.
 
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- The MDN Web Docs (https://developer.mozilla.org/en-US/) proved to be invaluable for quick lookups regarding the different values for certain properties, specifically with centering the content as expected within the containers.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Anthony Mack](https://txmack713.github.io/four-card-feature/)
+- Frontend Mentor - [@TXMack713](https://www.frontendmentor.io/profile/txmack713)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+### Acknowledgements
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- 
