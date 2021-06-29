@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![file:///home/txmack713/Downloads/FireShot/FireShot%20Capture%20002%20-%20Frontend%20Mentor%20-%203-column%20preview%20card%20component%20-%20127.0.0.1.png]
+![./images/Web%20capture_29-6-2021_74141_txmack713.github.io]
 
 ### Links
 
@@ -45,36 +45,39 @@ Users should be able to:
 
 ### What I learned
 
-I learned that including the html element in your resets distorts how the page is rendered. I removed the html element from my page reset after some trial and error while struggling to get a nav bar to remain sticky while working on an MDN CSS exercise.
+I chose to use CSS Grid to have better control over the placement of the sections to get them exactly where I wanted.
 
-I initially tried laying out the page using CSS Flexbox, but was unable to achieve the responsiveness and element positioning I was expecting. I chose to switch to CSS Grid and was able to place the container, divs and div items exactly where I wanted.
+I paid careful attention to the spacing of between the different sections by examining closely the space between the sections on my rendered page versus the spacing shown on the desktop and mobile previews.
 
-Also, by submitting my solution on frontendmentor.io, I was able to look and compare my solution to others and noticed that there were some design details that I missed and was able to revist and address.
+I learned that using percentages rendered the layout of the page in line with my expectations better than using vw and vh for units. When using vw and vh, the elements were jumbled together and would overlap no matter how much I increased or descreased the size of the gaps and tracks within the body and section elements. By switching to percentages, the page rendered as expected and allowed me to fine tune the layout, moving and tweaking item placements as necessary to better match the design.
 
-Having the static page hosted on GitHub pages allowed me to see how differently browsers rendered the same content. The Brave, Edge and Google browsers all rendered the page in mobile and desktop layouts as expected, but the Firefox browser extended the section elements fully to the top and bottom of the page. By removing the html element from my page reset and adding a 5% margin to the body element the page created the gap based on the CSS Grid inputs within the container element. However, the page still rendered the content fairly large compared to the other browsers.
+I experimented with the box-shadow property and enlarged the blur-radius to get a more pronounced visual effect in the desktop layout where the design was spread out over multiple columns versus the single column in the mobile layout.
 
 ```css
 body {
-    margin: 5% auto;
-    height: 100%;
-  }
-  .container {
     display: grid;
-    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
-    grid-template-rows: 20% 60% 20%;
-    margin: 0 auto;
-    padding: 0;
-    block-size: 100%;
-    justify-content: center;
-    align-content: center;
-    overflow: auto;
+    grid-template-rows: 10% 10% repeat(5, 12.5%) 17.5%;
+    grid-template-columns: repeat(11, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    padding: 2rem 0;
     max-inline-size: 1440px;
+  }
+
+  .calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  box-shadow: 0 5px 5px hsl(229, 6%, 66%);
+}
+
+.calculator {
+    border-top: 3px solid hsl(212, 86%, 64%);
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
   }
 ```
 
 ### Continued development
 
-- I've worked through Flexbox Zombies and am currently working through Grid Critters in an effort to perfect my layout skills. This lesson taught me that I still have a ways to go with in learning how to move knowing the syntax to being able to expertly position items on the page as expected.
+- I'm continuing to learn CSS layout, particularly CSS Grid as I find that I have greater control over and confidence in the placement of items in my layouts.
 
 ### Useful resources
 - The MDN Web Docs (https://developer.mozilla.org/en-US/) proved to be invaluable for quick lookups regarding the different values for certain properties, specifically with centering the content as expected within the containers.
@@ -85,5 +88,3 @@ body {
 - Frontend Mentor - [@TXMack713](https://www.frontendmentor.io/profile/txmack713)
 
 ### Acknowledgements
-
-- 
