@@ -58,6 +58,16 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+nav {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+  font-family: 'poppins-light', sans-serif;
+  font-weight: lighter;
+  color: hsl(229, 6%, 66%);
+  justify-self: end;
+  object-fit: contain;
+}
+
 .first-header {
   font-family: 'poppins-light', sans-serif;
   font-weight: lighter;
@@ -153,6 +163,16 @@ section > img {
     max-inline-size: 1440px;
   }
 
+  nav {
+    border-top: 3px solid hsl(180, 62%, 55%);
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+    font-family: 'poppins-light', sans-serif;
+    font-weight: lighter;
+    color: hsl(229, 6%, 66%);
+    justify-self: end;
+    object-fit: contain;
+  }
+  
   header {
     margin-bottom: 5%;
   }
